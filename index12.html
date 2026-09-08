@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Stretch">
+<meta name="theme-color" content="#f6f6f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0d11" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAF20lEQVR4nO2dXZIjKQwGNRt7ve2LbB9nTrIX3HkgwlPTttpA8ZNCX77bFiIRFIWrfvz/7z8mxCv+2h2A4CI5hIvkEC6SQ7hIDuEiOYSL5BAukkO4SA7hIjmEi+QQLpJDuEgO4fL37gA28fO/5o98fkyIA82PdLfsO7S4kkmRZNPKTTOGfEMcMskxql/T+JFGjrE9msOPNHKIdnLIMWOgJygeOeQQXUgO4SI5hIvkEC6SQ7hIDuEiOYSL5BAuOeSYcSs1we3ZHHKILtLIMXagJygblkgOG9ejOcywXHLYiH5NY4ZlPCZY0BnSCrLKISpINq2IFiSHcMn6vxVrXHbkW3BYojXH8FN9CXQ5XY4FJz3PteRQObac/j3OkrPkgJwIP8WSU+SAaHElviLx5QBqcSWyIpHlgGtxJaYiMeUIpMWVaIoE3CENaobFizxU5di1kZV1Ay2OHEN6aEivcCKZTBA57vTH1G7ABjYCvBwhsh8iyHbYcvQlvT7dld8//Au7v38tYDlmnORbs1w45QwiVY7W/H6f3EnXkGN/lOcHUo5RaV22rzAqAJgfPDmGHNBC3bIPe+QMJsf9PG7fhbwfFcYPkhw3Mzj8enLsFwb0A3NvpT53nx+DzZjBczwvw67/+A4wclTyUgtGKr/yMjBGSaiEIUf3ZhRTiyvdfgCaBpDjYDMKYf3YLUefGdipxOM54Ah+7JajhmczgtLnxz62ylHTzceYUejwY1+T98nR0eboZhTiNJw9reAL7wDAbdwkR8IJ5UqQyYVaOQ42oxBhcbpDjtaePs+MAj4PyMqBHEbT4bV6uRxv9T9+QrnSOrmszQaycjw424wCuI1r5WgtGwkhFQ9w5QAPqcFQW0qSQ2WjgMnDQjmaxgd1MM0CmRxS5RAwMHJca2m2slG4tpoxs6ySI09/r+nXJflkVA7GQLnL43z5kOYAcsKQ40rQGsN5LMw4lsgBa/NgXv4hZcG4n5/VxG9NuA+g8k8FMK1EvE6p+ftanzqkaxZVjnaoB7eGIzlaiPBnk4FIjjqSaVGYv+Y4IF+V88j6lk7+xfnP5/i+AYTV6M1134yw69Myc9EKuFrZC9AMDLnXHHfMOFqLQm45+kigRSHxtHJ/k+p0VDmqyaRFIXHlaCKfGSY5xDdIDuGSWI76mSLlnGKp5RDvyC1HTUnIWjYsuxz2ru8Tm2H75SAcfHp5Q3Xjo04JNyPNbMUm2OdHjPEXIsgvTB5OuyuHACM5hIvkEC4AOQhrUg6Y1agh5BBUlsihejCD+VnlVY7MJsHazpBj9+RKBJCTVXLAxkR4luSTUTlM1yys65QCRg7BY6EcTfUgW/FAJodUORi1dD+YPJDk+EKe4kFt6Vo5SE99h0J6dwC4chh3SI0E3MblcrQWD3DuBtD65qG12UBWjpyTC6/VO+Ro1f/U4oHPA7JyWILJJcKr7DbJ0fG0xpP86DBjR/OplaOAHE+DAbdxnxwdQ+GM4hGn4VsrR8LJJciEUmBPK4Vj/IiwCL0y/zmkb6nM0bMT+OT+pjv4rSMBUDm6nxwdpYTENMMQctjRfoQ1wyhy1PPSD0AeX/AysEBTIWLN8aApcfC83wyPoTtJDhuRwe2K3I+KYYbh5LBBedyiyJBgMGYYUQ5r79rtiowKgGSGQeWw0WmdZMnYH4WZYVw5rKtH15xRnfErPDMMLYf19mV9oodvOcwOeC1sOezeWF+W9BBBtoOXo4DNPjawEQSRw1YtF2rgRDKZOHLYhIuOXW+LjWCGBZOjsH0P9A5BtChEu/FmwfL7B9EiD1g5HgQqIdG0KESWowBXJKYWhfhyFICKRNaicIocBYgi8bUonCXHA9Qt+7AcKseDBZYc58SD0+V4kHUj6w5p5Hgm7AGtZSSWQ7wj4A6pWIXkEC6SQ7hIDuEiOYSL5BAukkO4SA7hIjmEi+QQLpJDuEgO4SI5hIvkEC6SQ7hIDuEiOYSL5BAukkO4SA7hIjmEi+QQLpJDuEgO4fILIgMCf5SVw7cAAAAASUVORK5CYII=">
+<title>Stretch Timer</title>
+<style>
+  :root{
+    --bg: #f6f6f8;
+    --bg-top: #ffffff;
+    --card: #ffffff;
+    --card-2: #eef0f3;
+    --text: #16161b;
+    --muted: #6c6c76;
+    --muted-2: #a3a3ac;
+    --border: #e6e6ec;
+    --accent: #ff6b4d;
+    --accent-text: #4a1206;
+    --accent-soft: #fff0ec;
+    --accent-dim: #ffc3b3;
+    --success: #1fa356;
+    --success-soft: #e6f8ee;
+    --success-dim: #a9e6c3;
+    --danger: #e0453a;
+    --warn: #ff3b30;
+    --shadow-sm: 0 1px 2px rgba(20,20,30,0.04), 0 1px 1px rgba(20,20,30,0.03);
+    --shadow-md: 0 10px 26px rgba(20,20,30,0.12);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root{
+      --bg: #0c0d11;
+      --bg-top: #17141b;
+      --card: #191a20;
+      --card-2: #212228;
+      --text: #ffffff;
+      --muted: #9a9aa4;
+      --muted-2: #5c5c66;
+      --border: #2a2b32;
+      --accent: #ff6b4d;
+      --accent-text: #ffe3da;
+      --accent-soft: rgba(255,107,77,0.16);
+      --accent-dim: rgba(255,107,77,0.4);
+      --success: #32d74b;
+      --success-soft: rgba(50,215,75,0.14);
+      --success-dim: rgba(50,215,75,0.4);
+      --danger: #ff453a;
+      --warn: #ff453a;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+      --shadow-md: 0 10px 26px rgba(0,0,0,0.45);
+    }
+  }
+
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    overscroll-behavior-y: contain;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 340px);
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  .app {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 14px 18px 14px;
+  }
+
+  /* ---------- Add to Home Screen banner ---------- */
+
+  .a2hs-banner {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    border-radius: 14px;
+    padding: 11px 12px;
+    margin-bottom: 14px;
+  }
+
+  .a2hs-banner.show { display: flex; }
+
+  .a2hs-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .a2hs-text {
+    flex: 1;
+    font-size: 12.5px;
+    line-height: 1.4;
+    color: var(--muted);
+  }
+
+  .a2hs-text b { color: var(--text); }
+
+  .a2hs-close {
+    background: transparent;
+    border: none;
+    color: var(--muted-2);
+    font-size: 16px;
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+
+  /* ---------- Timer section ---------- */
+
+  .timer-section {
+    flex-shrink: 0;
+    padding: 2px 6px 20px;
+    text-align: center;
+  }
+
+  .top-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 6px;
+  }
+
+  .status {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+    color: var(--muted);
+    padding: 5px 14px;
+    border-radius: 100px;
+    background: var(--card-2);
+  }
+
+  .status.stretch { color: var(--accent-text); background: var(--accent-soft); }
+  .status.change { color: var(--muted); background: var(--card-2); }
+  .status.done { color: var(--success); background: var(--success-soft); }
+
+  .voice-toggle {
+    position: absolute;
+    right: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    color: var(--muted);
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .voice-toggle.on {
+    color: var(--accent-text);
+    border-color: var(--accent-dim);
+    background: var(--accent-soft);
+  }
+
+  .wake-indicator {
+    position: absolute;
+    left: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    color: var(--muted-2);
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.4;
+    transition: opacity 0.2s ease, color 0.2s ease;
+  }
+
+  .wake-indicator.active {
+    opacity: 1;
+    color: var(--accent-text);
+    background: var(--accent-soft);
+    border-color: var(--accent-dim);
+  }
+
+  .info-fade {
+    transition: opacity 0.16s ease;
+  }
+
+  .stretch-name {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 18px 0 5px;
+    min-height: 32px;
+    padding: 0 6px;
+    letter-spacing: -0.01em;
+  }
+
+  .round-badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--muted);
+    background: var(--card-2);
+    border-radius: 100px;
+    padding: 3px 11px;
+    margin-bottom: 6px;
+    min-height: 12px;
+    visibility: hidden;
+  }
+
+  .round-badge.show { visibility: visible; }
+
+  .next-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: var(--muted-2);
+    margin-bottom: 3px;
+  }
+
+  .stretch-photo-wrap {
+    display: none;
+    width: 100%;
+    max-width: 250px;
+    height: 160px;
+    margin: 8px auto 14px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    background: var(--card-2);
+    cursor: pointer;
+  }
+
+  .stretch-photo-wrap.next {
+    max-width: 190px;
+    height: 110px;
+    opacity: 0.82;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .stretch-photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .timer-ring {
+    position: relative;
+    width: 218px;
+    height: 218px;
+    margin: 16px auto 10px;
+    transition: transform 0.15s ease;
+  }
+
+  .timer-ring.pulse {
+    animation: ringPulse 1s ease-in-out infinite;
+  }
+
+  @keyframes ringPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.045); }
+  }
+
+  .timer-ring svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    filter: drop-shadow(0 6px 18px rgba(255,107,77,0.14));
+  }
+
+  .ring-track {
+    fill: none;
+    stroke: var(--border);
+    stroke-width: 9;
+  }
+
+  .ring-progress {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 9;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.25s linear, stroke 0.2s ease;
+  }
+
+  .ring-progress.change { stroke: var(--muted-2); }
+  .ring-progress.done { stroke: var(--success); }
+  .ring-progress.warn { stroke: var(--warn); }
+
+  .timer {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    transition: color 0.2s ease;
+  }
+
+  .timer.warn { color: var(--warn); }
+
+  .total-time {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted-2);
+    margin-bottom: 14px;
+  }
+
+  .upnext-strip {
+    display: none;
+    align-items: center;
+    gap: 7px;
+    overflow-x: auto;
+    padding: 2px 2px 12px;
+    margin: 0 0 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .upnext-strip.show { display: flex; }
+
+  .upnext-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    color: var(--muted-2);
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .upnext-chip {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--muted);
+    background: var(--card-2);
+    border-radius: 100px;
+    padding: 5px 12px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .progress-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .progress-count {
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .progress-bar-track {
+    width: 100%;
+    height: 5px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 22px;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+    width: 0%;
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .controls-row {
+    display: flex;
+    gap: 8px;
+  }
+
+  .btn {
+    border: none;
+    border-radius: 16px;
+    padding: 17px 0;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.08s ease, opacity 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .btn:active { transform: scale(0.97); }
+
+  .btn-primary {
+    background: var(--accent);
+    color: var(--accent-text);
+    width: 100%;
+    padding: 19px 0;
+    font-size: 18px;
+    box-shadow: 0 10px 22px rgba(255,107,77,0.28);
+  }
+
+  .btn-secondary {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    flex: 1;
+    font-size: 14px;
+    padding: 14px 4px;
+  }
+
+  .btn-tertiary {
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    width: 100%;
+    padding: 13px 0;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+    box-shadow: none;
+  }
+
+  /* ---------- List section ---------- */
+
+  .list-section {
+    flex: 1;
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .list-heading {
+    margin: 18px 0 12px;
+  }
+
+  .list-heading-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3px;
+  }
+
+  .list-heading-top span {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--text);
+    letter-spacing: 0.01em;
+  }
+
+  .edit-toggle {
+    background: var(--card);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 13px;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  .edit-toggle.on {
+    color: var(--accent-text);
+    border-color: var(--accent-dim);
+    background: var(--accent-soft);
+  }
+
+  .edit-toggle:disabled { opacity: 0.4; cursor: default; }
+
+  .hint {
+    font-weight: 500;
+    color: var(--muted-2);
+    font-size: 12px;
+  }
+
+  .stretch-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 16px;
+  }
+
+  .stretch-item-wrap {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .swipe-bg {
+    position: absolute;
+    inset: 0;
+    background: var(--danger);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 22px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 13px;
+  }
+
+  .stretch-item {
+    position: relative;
+    background: var(--card);
+    border-radius: 16px;
+    padding: 11px 12px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+    touch-action: pan-y;
+  }
+
+  .stretch-item.active {
+    border-color: var(--accent-dim);
+    background: var(--accent-soft);
+  }
+
+  .item-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .item-index {
+    font-size: 13px;
+    color: var(--muted-2);
+    font-variant-numeric: tabular-nums;
+    width: 16px;
+    flex-shrink: 0;
+    font-weight: 700;
+  }
+
+  .item-name {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 0;
+    min-width: 0;
+  }
+
+  .item-name:disabled { color: var(--text); opacity: 1; -webkit-text-fill-color: var(--text); }
+  .item-name:focus { outline: none; }
+
+  .item-bottom {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 9px;
+    flex-wrap: wrap;
+  }
+
+  .thumb-btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--card-2);
+    border: 1px dashed var(--border);
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--muted-2);
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .thumb-btn.has-img { border-style: solid; }
+
+  .thumb-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .thumb-remove {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--danger);
+    color: #fff;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    border: 1.5px solid var(--card);
+  }
+
+  .stepper {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background: var(--card-2);
+    border-radius: 9px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .stepper button {
+    background: transparent;
+    border: none;
+    color: var(--text);
+    width: 26px;
+    height: 26px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stepper button:disabled { color: var(--muted-2); cursor: default; }
+
+  .stepper .stepper-val {
+    min-width: 26px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .item-actions {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .icon-btn {
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .icon-btn:active { background: var(--card-2); }
+  .icon-btn:disabled { opacity: 0.25; cursor: default; }
+
+  .icon-btn.delete { color: var(--danger); font-size: 17px; }
+
+  .static-tag {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--muted);
+    background: var(--card-2);
+    border-radius: 100px;
+    padding: 4px 10px;
+  }
+
+  .add-btn {
+    width: 100%;
+    background: transparent;
+    border: 1.5px dashed var(--border);
+    color: var(--accent-text);
+    border-radius: 14px;
+    padding: 14px 0;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 2px;
+  }
+
+  .add-btn:active { background: var(--accent-soft); }
+
+  .add-btn:disabled { opacity: 0.3; cursor: default; color: var(--muted); }
+
+  /* ---------- Fullscreen photo overlay ---------- */
+
+  .fullscreen-photo {
+    position: fixed;
+    inset: 0;
+    background: rgba(10,10,12,0.94);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    padding: 24px;
+  }
+
+  .fullscreen-photo.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .fullscreen-photo img {
+    max-width: 100%;
+    max-height: 68vh;
+    border-radius: 22px;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.55);
+    object-fit: cover;
+  }
+
+  .fullscreen-caption {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 18px;
+    text-align: center;
+  }
+
+  .fullscreen-hint {
+    color: rgba(255,255,255,0.55);
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+
+  /* ---------- Completion celebration ---------- */
+
+  .confetti-wrap {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: visible;
+  }
+
+  .confetti-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 3px;
+    opacity: 1;
+    animation: confettiBurst 0.9s ease-out forwards;
+  }
+
+  @keyframes confettiBurst {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    100% { transform: translate(var(--tx), var(--ty)) scale(0.4); opacity: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <div class="a2hs-banner" id="a2hsBanner">
+    <span class="a2hs-icon">&#128241;</span>
+    <span class="a2hs-text"><b>Add to Home Screen</b> for the best experience — tap Share, then "Add to Home Screen."</span>
+    <button class="a2hs-close" id="a2hsClose">&#10005;</button>
+  </div>
+
+  <div class="timer-section">
+    <div class="top-row">
+      <div class="wake-indicator" id="wakeIndicator" title="Screen stays awake while running">&#128161;</div>
+      <div class="status" id="status">READY</div>
+      <button class="voice-toggle on" id="voiceToggle" title="Toggle voice announcements">&#128266;</button>
+    </div>
+
+    <div class="info-fade" id="infoFade">
+      <div class="stretch-name" id="stretchName">Ready to begin</div>
+      <div class="round-badge" id="roundBadge"></div>
+      <div class="stretch-photo-wrap" id="photoWrap">
+        <img id="stretchPhoto" src="" alt="">
+      </div>
+    </div>
+
+    <div class="timer-ring" id="timerRing" style="position:relative;">
+      <svg viewBox="0 0 220 220">
+        <circle class="ring-track" cx="110" cy="110" r="100"></circle>
+        <circle class="ring-progress" id="ringProgress" cx="110" cy="110" r="100"></circle>
+      </svg>
+      <div class="timer" id="timer">--</div>
+      <div class="confetti-wrap" id="confettiWrap"></div>
+    </div>
+
+    <div class="total-time" id="totalTime">Total: --</div>
+
+    <div class="upnext-strip" id="upnextStrip">
+      <span class="upnext-label">UP NEXT</span>
+    </div>
+
+    <div class="progress-row">
+      <span class="progress-count" id="progressCount">0 / 0</span>
+    </div>
+    <div class="progress-bar-track">
+      <div class="progress-bar-fill" id="progressFill"></div>
+    </div>
+    <div class="controls">
+      <button class="btn btn-primary" id="startBtn">Start</button>
+      <div class="controls-row">
+        <button class="btn btn-secondary" id="stopBtn">Stop</button>
+        <button class="btn btn-secondary" id="skipBtn">Skip</button>
+        <button class="btn btn-secondary" id="resetSetBtn">Restart Set</button>
+      </div>
+      <button class="btn btn-tertiary" id="resetBtn">Reset Entire Routine</button>
+    </div>
+  </div>
+
+  <div class="list-section">
+    <div class="list-heading">
+      <div class="list-heading-top">
+        <span>Stretches</span>
+        <button class="edit-toggle" id="editToggle">&#9998; Edit</button>
+      </div>
+      <span class="hint" id="editHint">Locked — tap Edit to change</span>
+    </div>
+    <div class="stretch-list" id="stretchList"></div>
+    <button class="add-btn" id="addBtn">+ Add stretch</button>
+  </div>
+
+</div>
+
+<div class="fullscreen-photo" id="fsOverlay">
+  <img id="fsImg" src="" alt="">
+  <div class="fullscreen-caption" id="fsCaption"></div>
+  <div class="fullscreen-hint">Tap to dismiss</div>
+</div>
+
+<input type="file" id="photoInput" accept="image/*" style="display:none">
+
+<script>
+(function(){
+  "use strict";
+
+  var STORAGE_KEY = "stretchTimerList_v3";
+  var VOICE_KEY = "stretchTimerVoice_v1";
+  var A2HS_KEY = "stretchTimerA2HSDismissed";
+  var DEFAULT_SECONDS = 30;
+  var CHANGE_SECONDS = 5;
+  var MIN_SECONDS = 5;
+  var MAX_SECONDS = 180;
+  var SECONDS_STEP = 5;
+  var RING_R = 100;
+  var RING_CIRC = 2 * Math.PI * RING_R;
+  var FULLSCREEN_MS = 3000;
+
+  var defaultStretches = [
+    { name: "Hamstring Stretch", rounds: 1, seconds: 30, image: null },
+    { name: "Quad Stretch", rounds: 1, seconds: 30, image: null },
+    { name: "Hip Flexor Stretch", rounds: 1, seconds: 30, image: null },
+    { name: "Calf Stretch", rounds: 1, seconds: 30, image: null },
+    { name: "Shoulder Stretch", rounds: 1, seconds: 30, image: null }
+  ];
+
+  var stretches = loadStretches();
+  var voiceEnabled = loadVoicePref();
+  var pendingPhotoIndex = null;
+  var lastContentKey = null;
+  var fsTimer = null;
+
+  var state = {
+    phase: "ready",      // ready | stretch | change | done
+    index: 0,
+    round: 1,
+    timeLeft: 0,
+    intervalId: null,
+    running: false,
+    editMode: false      // resets to locked every time the app is opened
+  };
+
+  var audioCtx = null;
+  var wakeLock = null;
+
+  // ---------- Elements ----------
+  var a2hsBanner = document.getElementById("a2hsBanner");
+  var a2hsClose = document.getElementById("a2hsClose");
+  var statusEl = document.getElementById("status");
+  var infoFadeEl = document.getElementById("infoFade");
+  var nameEl = document.getElementById("stretchName");
+  var roundBadgeEl = document.getElementById("roundBadge");
+  var photoWrapEl = document.getElementById("photoWrap");
+  var photoImgEl = document.getElementById("stretchPhoto");
+  var timerRingEl = document.getElementById("timerRing");
+  var timerEl = document.getElementById("timer");
+  var ringEl = document.getElementById("ringProgress");
+  var confettiWrapEl = document.getElementById("confettiWrap");
+  var totalTimeEl = document.getElementById("totalTime");
+  var upnextStripEl = document.getElementById("upnextStrip");
+  var countEl = document.getElementById("progressCount");
+  var fillEl = document.getElementById("progressFill");
+  var startBtn = document.getElementById("startBtn");
+  var stopBtn = document.getElementById("stopBtn");
+  var skipBtn = document.getElementById("skipBtn");
+  var resetSetBtn = document.getElementById("resetSetBtn");
+  var resetBtn = document.getElementById("resetBtn");
+  var listEl = document.getElementById("stretchList");
+  var addBtn = document.getElementById("addBtn");
+  var editHint = document.getElementById("editHint");
+  var voiceToggle = document.getElementById("voiceToggle");
+  var editToggle = document.getElementById("editToggle");
+  var wakeIndicator = document.getElementById("wakeIndicator");
+  var photoInput = document.getElementById("photoInput");
+  var fsOverlay = document.getElementById("fsOverlay");
+  var fsImg = document.getElementById("fsImg");
+  var fsCaption = document.getElementById("fsCaption");
+
+  ringEl.style.strokeDasharray = String(RING_CIRC);
+
+  // ---------- Add to Home Screen banner ----------
+  (function initA2HS() {
+    try {
+      var isStandalone = window.navigator.standalone === true ||
+        (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches);
+      var dismissed = localStorage.getItem(A2HS_KEY) === "1";
+      var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+      if (!isStandalone && !dismissed && isIOS) a2hsBanner.classList.add("show");
+    } catch (e) {}
+  })();
+
+  a2hsClose.addEventListener("click", function() {
+    a2hsBanner.classList.remove("show");
+    try { localStorage.setItem(A2HS_KEY, "1"); } catch (e) {}
+  });
+
+  // ---------- Storage ----------
+  function loadStretches() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          return parsed.map(normalizeStretch);
+        }
+      }
+      var v2 = localStorage.getItem("stretchTimerList_v2");
+      if (v2) {
+        var p2 = JSON.parse(v2);
+        if (Array.isArray(p2) && p2.length > 0) return p2.map(normalizeStretch);
+      }
+      var v1 = localStorage.getItem("stretchTimerList_v1");
+      if (v1) {
+        var p1 = JSON.parse(v1);
+        if (Array.isArray(p1) && p1.length > 0) return p1.map(normalizeStretch);
+      }
+    } catch (e) {}
+    return defaultStretches.slice();
+  }
+
+  function normalizeStretch(s) {
+    if (typeof s === "string") return { name: s, rounds: 1, seconds: DEFAULT_SECONDS, image: null };
+    return {
+      name: s.name || "Stretch",
+      rounds: Math.max(1, parseInt(s.rounds, 10) || 1),
+      seconds: clampSeconds(parseInt(s.seconds, 10) || DEFAULT_SECONDS),
+      image: s.image || null
+    };
+  }
+
+  function clampSeconds(v) {
+    return Math.max(MIN_SECONDS, Math.min(MAX_SECONDS, v));
+  }
+
+  function saveStretches() {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(stretches)); return true; }
+    catch (e) { return false; }
+  }
+
+  function loadVoicePref() {
+    try {
+      var v = localStorage.getItem(VOICE_KEY);
+      return v === null ? true : v === "1";
+    } catch (e) { return true; }
+  }
+
+  function saveVoicePref() {
+    try { localStorage.setItem(VOICE_KEY, voiceEnabled ? "1" : "0"); } catch (e) {}
+  }
+
+  // ---------- Wake Lock (keep screen on while running) ----------
+  function requestWakeLock() {
+    try {
+      if ("wakeLock" in navigator) {
+        navigator.wakeLock.request("screen").then(function(lock) {
+          wakeLock = lock;
+          wakeIndicator.classList.add("active");
+          wakeLock.addEventListener("release", function() {
+            wakeLock = null;
+            wakeIndicator.classList.remove("active");
+          });
+        }).catch(function() {
+          wakeIndicator.classList.remove("active");
+        });
+      }
+    } catch (e) {}
+  }
+
+  function releaseWakeLock() {
+    if (wakeLock) {
+      try { wakeLock.release(); } catch (e) {}
+      wakeLock = null;
+    }
+    wakeIndicator.classList.remove("active");
+  }
+
+  document.addEventListener("visibilitychange", function() {
+    if (document.visibilityState === "visible" && state.running) requestWakeLock();
+  });
+
+  // ---------- Audio + haptics ----------
+  function ensureAudio() {
+    if (!audioCtx) {
+      var AC = window.AudioContext || window.webkitAudioContext;
+      if (AC) audioCtx = new AC();
+    }
+    if (audioCtx && audioCtx.state === "suspended") audioCtx.resume();
+  }
+
+  function tone(freq, startTime, duration, gainVal) {
+    if (!audioCtx) return;
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.type = "sine";
+    osc.frequency.value = freq;
+    gain.gain.setValueAtTime(0, startTime);
+    gain.gain.linearRampToValueAtTime(gainVal, startTime + 0.01);
+    gain.gain.linearRampToValueAtTime(0, startTime + duration);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start(startTime);
+    osc.stop(startTime + duration + 0.02);
+  }
+
+  function vibrate(pattern) {
+    try { if (navigator.vibrate) navigator.vibrate(pattern); } catch (e) {}
+  }
+
+  function playStartBeep() {
+    vibrate(70);
+    if (!audioCtx) return;
+    var t = audioCtx.currentTime;
+    tone(880, t, 0.16, 0.22);
+  }
+
+  function playFinishBeep() {
+    vibrate([70, 60, 70]);
+    if (!audioCtx) return;
+    var t = audioCtx.currentTime;
+    tone(660, t, 0.13, 0.22);
+    tone(660, t + 0.18, 0.13, 0.22);
+  }
+
+  function playTick() {
+    if (!audioCtx) return;
+    var t = audioCtx.currentTime;
+    tone(520, t, 0.05, 0.12);
+  }
+
+  function announce(text) {
+    if (!voiceEnabled) return;
+    try {
+      if (!("speechSynthesis" in window)) return;
+      window.speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(text);
+      u.rate = 1;
+      u.pitch = 1;
+      u.volume = 1;
+      window.speechSynthesis.speak(u);
+    } catch (e) {}
+  }
+
+  function cancelSpeech() {
+    try { window.speechSynthesis.cancel(); } catch (e) {}
+  }
+
+  voiceToggle.addEventListener("click", function() {
+    voiceEnabled = !voiceEnabled;
+    saveVoicePref();
+    voiceToggle.classList.toggle("on", voiceEnabled);
+    voiceToggle.innerHTML = voiceEnabled ? "&#128266;" : "&#128263;";
+    if (!voiceEnabled) cancelSpeech();
+  });
+
+  editToggle.addEventListener("click", function() {
+    state.editMode = !state.editMode;
+    render();
+  });
+
+  // ---------- Fullscreen photo ----------
+  function showFullscreenPhoto(src, name) {
+    if (!src) return;
+    fsImg.src = src;
+    fsCaption.textContent = name || "";
+    fsOverlay.classList.add("show");
+    if (fsTimer) clearTimeout(fsTimer);
+    fsTimer = setTimeout(hideFullscreenPhoto, FULLSCREEN_MS);
+  }
+
+  function hideFullscreenPhoto() {
+    fsOverlay.classList.remove("show");
+    if (fsTimer) { clearTimeout(fsTimer); fsTimer = null; }
+  }
+
+  fsOverlay.addEventListener("click", hideFullscreenPhoto);
+
+  // Plays the start cue and reveals a fullscreen photo (if the stretch has one)
+  function beginStretchVisuals(idx) {
+    playStartBeep();
+    announce(stretches[idx].name);
+    if (stretches[idx].image) showFullscreenPhoto(stretches[idx].image, stretches[idx].name);
+  }
+
+  // ---------- Confetti ----------
+  function celebrate() {
+    var colors = ["#ff6b4d", "#1fa356", "#ffb020", "#4d9dff"];
+    var count = 16;
+    for (var i = 0; i < count; i++) {
+      var dot = document.createElement("span");
+      dot.className = "confetti-dot";
+      var angle = (Math.PI * 2 * i) / count + Math.random() * 0.3;
+      var dist = 70 + Math.random() * 50;
+      var tx = Math.cos(angle) * dist;
+      var ty = Math.sin(angle) * dist;
+      dot.style.setProperty("--tx", tx + "px");
+      dot.style.setProperty("--ty", ty + "px");
+      dot.style.background = colors[i % colors.length];
+      dot.style.animationDelay = (Math.random() * 0.1) + "s";
+      confettiWrapEl.appendChild(dot);
+    }
+    setTimeout(function() { confettiWrapEl.innerHTML = ""; }, 1200);
+  }
+
+  // ---------- Photo handling ----------
+  photoInput.addEventListener("change", function(e) {
+    var file = e.target.files && e.target.files[0];
+    var idx = pendingPhotoIndex;
+    photoInput.value = "";
+    if (!file || idx === null) return;
+    resizeImageFile(file, function(dataUrl) {
+      var prev = stretches[idx].image;
+      stretches[idx].image = dataUrl;
+      var ok = saveStretches();
+      if (!ok) {
+        stretches[idx].image = prev;
+        alert("That photo was too large to save. Try a different photo.");
+      }
+      render();
+    });
+  });
+
+  function resizeImageFile(file, callback) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      var img = new Image();
+      img.onload = function() {
+        var maxDim = 640;
+        var w = img.width, h = img.height;
+        var scale = Math.min(1, maxDim / Math.max(w, h));
+        var cw = Math.max(1, Math.round(w * scale));
+        var ch = Math.max(1, Math.round(h * scale));
+        var canvas = document.createElement("canvas");
+        canvas.width = cw;
+        canvas.height = ch;
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0, cw, ch);
+        var dataUrl = canvas.toDataURL("image/jpeg", 0.75);
+        callback(dataUrl);
+      };
+      img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  }
+
+  // ---------- Helpers ----------
+  function getSeconds(i) {
+    return (stretches[i] && stretches[i].seconds) || DEFAULT_SECONDS;
+  }
+
+  function totalUnits() {
+    var t = 0;
+    for (var i = 0; i < stretches.length; i++) t += (stretches[i].rounds || 1);
+    return t;
+  }
+
+  function unitOrdinal(index, round) {
+    var t = 0;
+    for (var i = 0; i < index; i++) t += (stretches[i].rounds || 1);
+    return t + round;
+  }
+
+  function isLastUnit(index, round) {
+    return index === stretches.length - 1 && round >= (stretches[index] ? stretches[index].rounds : 1);
+  }
+
+  function getNextUnit(index, round) {
+    var r = stretches[index].rounds || 1;
+    if (round < r) return { index: index, round: round + 1 };
+    return { index: index + 1, round: 1 };
+  }
+
+  function isTimerActive() {
+    return state.phase === "stretch" || state.phase === "change";
+  }
+
+  function estimatedTotalSeconds() {
+    if (stretches.length === 0) return 0;
+    var total = 0;
+    var units = 0;
+    for (var i = 0; i < stretches.length; i++) {
+      var r = stretches[i].rounds || 1;
+      total += r * getSeconds(i);
+      units += r;
+    }
+    total += Math.max(0, units - 1) * CHANGE_SECONDS;
+    return total;
+  }
+
+  function formatDuration(totalSeconds) {
+    var m = Math.floor(totalSeconds / 60);
+    var s = totalSeconds % 60;
+    if (m === 0) return s + "s";
+    return m + "m " + (s < 10 ? "0" : "") + s + "s";
+  }
+
+  // Upcoming stretches (by stretch, not by round) shown in the "up next" strip
+  function buildUpcomingNames() {
+    if (stretches.length === 0) return [];
+    var startIndex = state.phase === "change" ? state.index + 2 : state.index + 1;
+    var result = [];
+    for (var i = startIndex; i < stretches.length && result.length < 3; i++) {
+      result.push(stretches[i].name);
+    }
+    return result;
+  }
+
+  // ---------- Rendering ----------
+  function render() {
+    var total = stretches.length;
+    var totalU = totalUnits();
+    var timerActive = isTimerActive();
+    var key = state.phase + ":" + state.index + ":" + state.round;
+
+    statusEl.className = "status";
+    if (state.phase === "ready") statusEl.textContent = "READY";
+    else if (state.phase === "stretch") { statusEl.textContent = "STRETCH"; statusEl.classList.add("stretch"); }
+    else if (state.phase === "change") { statusEl.textContent = "CHANGE POSITION"; statusEl.classList.add("change"); }
+    else if (state.phase === "done") { statusEl.textContent = "DONE"; statusEl.classList.add("done"); }
+
+    if (key !== lastContentKey) {
+      lastContentKey = key;
+      infoFadeEl.style.opacity = "0";
+      setTimeout(updateInfoContent, 150);
+    } else {
+      updateInfoContent();
+    }
+
+    updateTimerAndRing();
+
+    totalTimeEl.textContent = totalU > 0 ? ("Total: " + formatDuration(estimatedTotalSeconds())) : "Total: --";
+
+    var currentUnitNum = 0;
+    if (state.phase === "stretch" || state.phase === "change") currentUnitNum = unitOrdinal(state.index, state.round);
+    else if (state.phase === "done") currentUnitNum = totalU;
+
+    countEl.textContent = currentUnitNum + " / " + totalU;
+    var pct = totalU > 0 ? Math.round((currentUnitNum / totalU) * 100) : 0;
+    fillEl.style.width = pct + "%";
+
+    startBtn.textContent = state.running ? "Pause" : (state.phase === "ready" || state.phase === "done" ? "Start" : "Resume");
+    startBtn.disabled = total === 0 && state.phase === "ready";
+
+    stopBtn.disabled = !state.running;
+    skipBtn.disabled = !timerActive;
+    resetSetBtn.disabled = !timerActive;
+    resetBtn.disabled = state.phase === "ready" && !state.running;
+
+    var editingLocked = timerActive || !state.editMode;
+    addBtn.disabled = editingLocked;
+    editToggle.disabled = timerActive;
+    editToggle.classList.toggle("on", state.editMode);
+    editToggle.innerHTML = state.editMode ? "&#10003; Done" : "&#9998; Edit";
+
+    if (timerActive) editHint.textContent = "Stop the routine to edit";
+    else if (!state.editMode) editHint.textContent = "Locked — tap Edit to change";
+    else editHint.textContent = "Tap a name, photo, or time to change it";
+
+    // Up next strip
+    var upcoming = timerActive ? buildUpcomingNames() : [];
+    if (upcoming.length > 0) {
+      upnextStripEl.innerHTML = '<span class="upnext-label">UP NEXT</span>';
+      upcoming.forEach(function(n) {
+        var chip = document.createElement("span");
+        chip.className = "upnext-chip";
+        chip.textContent = n;
+        upnextStripEl.appendChild(chip);
+      });
+      upnextStripEl.classList.add("show");
+    } else {
+      upnextStripEl.classList.remove("show");
+    }
+
+    renderList(editingLocked);
+  }
+
+  function updateInfoContent() {
+    var total = stretches.length;
+    roundBadgeEl.classList.remove("show");
+    photoWrapEl.classList.remove("next");
+    photoWrapEl.style.display = "none";
+
+    if (state.phase === "ready") {
+      nameEl.textContent = total > 0 ? stretches[0].name : "Add a stretch to begin";
+      if (total > 0 && stretches[0].rounds > 1) { roundBadgeEl.textContent = "Round 1 of " + stretches[0].rounds; roundBadgeEl.classList.add("show"); }
+    } else if (state.phase === "stretch") {
+      var cur = stretches[state.index];
+      nameEl.textContent = cur ? cur.name : "";
+      if (cur && cur.rounds > 1) { roundBadgeEl.textContent = "Round " + state.round + " of " + cur.rounds; roundBadgeEl.classList.add("show"); }
+      if (cur && cur.image) { photoImgEl.src = cur.image; photoWrapEl.style.display = "block"; }
+    } else if (state.phase === "change") {
+      var next = getNextUnit(state.index, state.round);
+      var nextStretch = stretches[next.index];
+      var nextName = nextStretch ? nextStretch.name : "";
+      nameEl.innerHTML = '<span class="next-label">Next</span>' + escapeHtml(nextName);
+      if (nextStretch && nextStretch.rounds > 1) { roundBadgeEl.textContent = "Round " + next.round + " of " + nextStretch.rounds; roundBadgeEl.classList.add("show"); }
+      if (nextStretch && nextStretch.image) { photoImgEl.src = nextStretch.image; photoWrapEl.style.display = "block"; photoWrapEl.classList.add("next"); }
+    } else if (state.phase === "done") {
+      nameEl.textContent = "Stretching Complete";
+    }
+
+    infoFadeEl.style.opacity = "1";
+  }
+
+  function updateTimerAndRing() {
+    ringEl.classList.remove("change", "done", "warn");
+    timerEl.classList.remove("warn");
+    timerRingEl.classList.remove("pulse");
+
+    if (state.phase === "ready") {
+      timerEl.textContent = stretches.length > 0 ? String(getSeconds(0)) : String(DEFAULT_SECONDS);
+      setRing(0);
+    } else if (state.phase === "stretch") {
+      timerEl.textContent = String(state.timeLeft);
+      setRing((getSeconds(state.index) - state.timeLeft) / getSeconds(state.index));
+      applyWarnState();
+    } else if (state.phase === "change") {
+      timerEl.textContent = String(state.timeLeft);
+      ringEl.classList.add("change");
+      setRing((CHANGE_SECONDS - state.timeLeft) / CHANGE_SECONDS);
+      applyWarnState();
+    } else if (state.phase === "done") {
+      timerEl.textContent = "--";
+      ringEl.classList.add("done");
+      setRing(1);
+    }
+  }
+
+  function applyWarnState() {
+    if (state.running && state.timeLeft > 0 && state.timeLeft <= 3) {
+      ringEl.classList.add("warn");
+      timerEl.classList.add("warn");
+      timerRingEl.classList.add("pulse");
+    }
+  }
+
+  function setRing(fraction) {
+    var f = Math.max(0, Math.min(1, fraction));
+    var offset = RING_CIRC * (1 - f);
+    ringEl.style.strokeDashoffset = String(offset);
+  }
+
+  function escapeHtml(str) {
+    var div = document.createElement("div");
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  function renderList(editingLocked) {
+    listEl.innerHTML = "";
+    stretches.forEach(function(st, i) {
+      var wrap = document.createElement("div");
+      wrap.className = "stretch-item-wrap";
+
+      var swipeBg = document.createElement("div");
+      swipeBg.className = "swipe-bg";
+      swipeBg.textContent = "Release to delete";
+      wrap.appendChild(swipeBg);
+
+      var item = document.createElement("div");
+      item.className = "stretch-item" + (isActiveIndex(i) ? " active" : "");
+
+      var top = document.createElement("div");
+      top.className = "item-top";
+
+      var idx = document.createElement("div");
+      idx.className = "item-index";
+      idx.textContent = (i + 1) + ".";
+      top.appendChild(idx);
+
+      var input = document.createElement("input");
+      input.className = "item-name";
+      input.type = "text";
+      input.value = st.name;
+      input.disabled = editingLocked;
+      input.addEventListener("change", function() {
+        var v = input.value.trim();
+        stretches[i].name = v.length > 0 ? v : st.name;
+        saveStretches();
+        render();
+      });
+      top.appendChild(input);
+
+      if (!editingLocked) {
+        var delBtn = document.createElement("button");
+        delBtn.className = "icon-btn delete";
+        delBtn.textContent = "\u2715";
+        delBtn.addEventListener("click", function() { deleteStretch(i); });
+        top.appendChild(delBtn);
+      }
+
+      item.appendChild(top);
+
+      var bottom = document.createElement("div");
+      bottom.className = "item-bottom";
+
+      var thumb = document.createElement("button");
+      thumb.className = "thumb-btn" + (st.image ? " has-img" : "");
+      thumb.disabled = editingLocked;
+      if (st.image) {
+        var img = document.createElement("img");
+        img.src = st.image;
+        thumb.appendChild(img);
+        if (!editingLocked) {
+          var removeBtn = document.createElement("span");
+          removeBtn.className = "thumb-remove";
+          removeBtn.textContent = "\u2715";
+          removeBtn.addEventListener("click", function(ev) {
+            ev.stopPropagation();
+            stretches[i].image = null;
+            saveStretches();
+            render();
+          });
+          thumb.appendChild(removeBtn);
+        }
+      } else {
+        thumb.textContent = "\u{1F4F7}";
+      }
+      thumb.addEventListener("click", function() {
+        if (editingLocked) return;
+        pendingPhotoIndex = i;
+        photoInput.click();
+      });
+      bottom.appendChild(thumb);
+
+      if (!editingLocked) {
+        var secStepper = document.createElement("div");
+        secStepper.className = "stepper";
+        var secMinus = document.createElement("button");
+        secMinus.textContent = "\u2212";
+        secMinus.disabled = st.seconds <= MIN_SECONDS;
+        secMinus.addEventListener("click", function() {
+          stretches[i].seconds = clampSeconds(stretches[i].seconds - SECONDS_STEP);
+          saveStretches();
+          render();
+        });
+        secStepper.appendChild(secMinus);
+        var secVal = document.createElement("span");
+        secVal.className = "stepper-val";
+        secVal.textContent = st.seconds + "s";
+        secStepper.appendChild(secVal);
+        var secPlus = document.createElement("button");
+        secPlus.textContent = "+";
+        secPlus.disabled = st.seconds >= MAX_SECONDS;
+        secPlus.addEventListener("click", function() {
+          stretches[i].seconds = clampSeconds(stretches[i].seconds + SECONDS_STEP);
+          saveStretches();
+          render();
+        });
+        secStepper.appendChild(secPlus);
+        bottom.appendChild(secStepper);
+
+        var roundStepper = document.createElement("div");
+        roundStepper.className = "stepper";
+        var rMinus = document.createElement("button");
+        rMinus.textContent = "\u2212";
+        rMinus.disabled = st.rounds <= 1;
+        rMinus.addEventListener("click", function() {
+          stretches[i].rounds = Math.max(1, stretches[i].rounds - 1);
+          saveStretches();
+          render();
+        });
+        roundStepper.appendChild(rMinus);
+        var rVal = document.createElement("span");
+        rVal.className = "stepper-val";
+        rVal.textContent = "x" + st.rounds;
+        roundStepper.appendChild(rVal);
+        var rPlus = document.createElement("button");
+        rPlus.textContent = "+";
+        rPlus.disabled = st.rounds >= 20;
+        rPlus.addEventListener("click", function() {
+          stretches[i].rounds = Math.min(20, stretches[i].rounds + 1);
+          saveStretches();
+          render();
+        });
+        roundStepper.appendChild(rPlus);
+        bottom.appendChild(roundStepper);
+
+        var actions = document.createElement("div");
+        actions.className = "item-actions";
+
+        var upBtn = document.createElement("button");
+        upBtn.className = "icon-btn";
+        upBtn.textContent = "\u2191";
+        upBtn.disabled = i === 0;
+        upBtn.addEventListener("click", function() { moveStretch(i, -1); });
+        actions.appendChild(upBtn);
+
+        var downBtn = document.createElement("button");
+        downBtn.className = "icon-btn";
+        downBtn.textContent = "\u2193";
+        downBtn.disabled = i === stretches.length - 1;
+        downBtn.addEventListener("click", function() { moveStretch(i, 1); });
+        actions.appendChild(downBtn);
+
+        bottom.appendChild(actions);
+
+        // Swipe-to-delete (in addition to the X button, as a quick gesture)
+        attachSwipeToDelete(item, i);
+      } else {
+        var tag = document.createElement("span");
+        tag.className = "static-tag";
+        tag.textContent = st.seconds + "s" + (st.rounds > 1 ? (" \u00d7 " + st.rounds) : "");
+        bottom.appendChild(tag);
+      }
+
+      item.appendChild(bottom);
+      wrap.appendChild(item);
+      listEl.appendChild(wrap);
+    });
+  }
+
+  function attachSwipeToDelete(item, i) {
+    var startX = 0, dx = 0, dragging = false;
+    item.addEventListener("touchstart", function(e) {
+      startX = e.touches[0].clientX;
+      dragging = true;
+      item.style.transition = "none";
+    }, { passive: true });
+    item.addEventListener("touchmove", function(e) {
+      if (!dragging) return;
+      dx = e.touches[0].clientX - startX;
+      if (dx > 0) dx = 0;
+      if (dx < -96) dx = -96;
+      item.style.transform = "translateX(" + dx + "px)";
+    }, { passive: true });
+    item.addEventListener("touchend", function() {
+      dragging = false;
+      item.style.transition = "transform 0.2s ease";
+      if (dx < -70) {
+        item.style.transform = "translateX(-100%)";
+        setTimeout(function() { deleteStretch(i); }, 180);
+      } else {
+        item.style.transform = "translateX(0)";
+      }
+      dx = 0;
+    });
+  }
+
+  function isActiveIndex(i) {
+    if (state.phase === "stretch") return i === state.index;
+    if (state.phase === "change") return i === getNextUnit(state.index, state.round).index;
+    return false;
+  }
+
+  // ---------- List editing ----------
+  function moveStretch(i, dir) {
+    var j = i + dir;
+    if (j < 0 || j >= stretches.length) return;
+    var tmp = stretches[i];
+    stretches[i] = stretches[j];
+    stretches[j] = tmp;
+    saveStretches();
+    render();
+  }
+
+  function deleteStretch(i) {
+    stretches.splice(i, 1);
+    saveStretches();
+    render();
+  }
+
+  addBtn.addEventListener("click", function() {
+    stretches.push({ name: "New Stretch", rounds: 1, seconds: DEFAULT_SECONDS, image: null });
+    saveStretches();
+    render();
+    var inputs = listEl.querySelectorAll(".item-name");
+    var last = inputs[inputs.length - 1];
+    if (last) { last.focus(); last.select(); }
+  });
+
+  // ---------- Timer engine ----------
+  function clearTimer() {
+    if (state.intervalId) { clearInterval(state.intervalId); state.intervalId = null; }
+  }
+
+  // The logic that runs whenever the current phase's countdown reaches zero.
+  // Also reused by the Skip button so it can jump straight to this point.
+  function advancePhase() {
+    if (state.phase === "stretch") {
+      playFinishBeep();
+      if (isLastUnit(state.index, state.round)) { finishRoutine(); return; }
+      state.phase = "change";
+      state.timeLeft = CHANGE_SECONDS;
+      render();
+      return;
+    } else if (state.phase === "change") {
+      var next = getNextUnit(state.index, state.round);
+      state.index = next.index;
+      state.round = next.round;
+      state.phase = "stretch";
+      state.timeLeft = getSeconds(state.index);
+      beginStretchVisuals(state.index);
+      render();
+      return;
+    }
+  }
+
+  function tick() {
+    state.timeLeft -= 1;
+    if (state.timeLeft > 0) {
+      if (state.timeLeft <= 3) announce(String(state.timeLeft));
+      render();
+      return;
+    }
+    advancePhase();
+  }
+
+  function startInterval() {
+    clearTimer();
+    state.intervalId = setInterval(tick, 1000);
+  }
+
+  function finishRoutine() {
+    clearTimer();
+    state.running = false;
+    state.phase = "done";
+    announce("Stretching complete");
+    releaseWakeLock();
+    hideFullscreenPhoto();
+    render();
+    celebrate();
+  }
+
+  // Pauses exactly where the timer currently is — no reset.
+  function pauseNow() {
+    clearTimer();
+    state.running = false;
+    cancelSpeech();
+    releaseWakeLock();
+    render();
+  }
+
+  function handleStartPause() {
+    if (stretches.length === 0) return;
+
+    if (state.running) {
+      pauseNow();
+      return;
+    }
+
+    ensureAudio();
+
+    if (state.phase === "ready" || state.phase === "done") {
+      state.index = 0;
+      state.round = 1;
+      state.phase = "stretch";
+      state.timeLeft = getSeconds(0);
+      state.running = true;
+      beginStretchVisuals(0);
+      startInterval();
+      requestWakeLock();
+      render();
+      return;
+    }
+
+    state.running = true;
+    startInterval();
+    requestWakeLock();
+    render();
+  }
+
+  function handleSkip() {
+    if (!isTimerActive()) return;
+    ensureAudio();
+    advancePhase();
+    if (state.running) startInterval();
+  }
+
+  function handleResetSet() {
+    if (!isTimerActive()) return;
+    ensureAudio();
+    if (state.phase === "stretch") {
+      state.timeLeft = getSeconds(state.index);
+      if (state.running) beginStretchVisuals(state.index);
+    } else if (state.phase === "change") {
+      state.timeLeft = CHANGE_SECONDS;
+    }
+    if (state.running) startInterval();
+    render();
+  }
+
+  function handleReset() {
+    clearTimer();
+    state.running = false;
+    state.phase = "ready";
+    state.index = 0;
+    state.round = 1;
+    state.timeLeft = 0;
+    cancelSpeech();
+    releaseWakeLock();
+    hideFullscreenPhoto();
+    render();
+  }
+
+  startBtn.addEventListener("click", handleStartPause);
+  stopBtn.addEventListener("click", function() { if (state.running) pauseNow(); });
+  skipBtn.addEventListener("click", handleSkip);
+  resetSetBtn.addEventListener("click", handleResetSet);
+  resetBtn.addEventListener("click", handleReset);
+
+  // ---------- Init ----------
+  voiceToggle.classList.toggle("on", voiceEnabled);
+  voiceToggle.innerHTML = voiceEnabled ? "&#128266;" : "&#128263;";
+  render();
+})();
+</script>
+</body>
+</html>
